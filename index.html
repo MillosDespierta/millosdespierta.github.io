@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <title>La Hinchada Exige Cambios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS3MFFSJ7H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XS3MFFSJ7H');
+  </script>
   <style>
     body {
       font-family: sans-serif;
@@ -12,7 +20,6 @@
       padding: 20px;
       text-align: center;
     }
-
     .btn {
       display: inline-block;
       margin: 20px auto;
@@ -24,7 +31,6 @@
       text-decoration: none;
       border-radius: 6px;
     }
-
     .container {
       background: #fff;
       color: #333;
@@ -33,11 +39,9 @@
       margin-top: 20px;
       text-align: left;
     }
-
     h1, h2 {
       color: #fff;
     }
-
     pre {
       white-space: pre-wrap;
       background: #f0f0f0;
@@ -45,35 +49,42 @@
       border-radius: 4px;
       color: #000;
     }
-
     .copy-btn {
-      padding: 10px 20px;
+      margin-top: 10px;
+      padding: 8px 20px;
+      font-weight: bold;
       font-size: 1em;
-      margin: 10px 5px;
-      background-color: #fff;
-      color: #0033A0;
+      background: #0033A0;
+      color: #fff;
       border: none;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
     }
-
-    .copy-btn:hover {
-      background-color: #d8d8d8;
+    .share-section {
+      margin-top: 40px;
+      background: #ffffff22;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .share-buttons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.4em;
     }
   </style>
 </head>
 <body>
 
-  <h1>¡La hinchada exige cambios ya!</h1>
-  <p>Estamos enviando este mensaje directamente a Amber Capital en Londres, socio mayoritario de Millonarios FC, para que actúe de inmediato.</p>
-  <p>Vamos a la raíz del problema. La crisis del club debe terminar.</p>
-  <p>Abajo encontrarás el mensaje en inglés. Cópialo y haz clic en el botón para abrir tu correo con los destinatarios y asunto ya listos.</p>
+  <h1>¡Acción inmediata por Millonarios FC!</h1>
+  <p>La hinchada exige cambios reales. Vamos a la raíz del problema: <strong>la sede de Amber Capital en Londres</strong>. Por eso este mensaje debe enviarse en inglés.</p>
+  <p>Haz clic abajo para abrir tu app de correo con los destinatarios y asunto ya listos. Solo copia el mensaje y envíalo.</p>
 
   <a class="btn" href="mailto:ir@ambercapital.com;joseph.oughourlian@ambercapital.com;olivier.fortesa@ambercapital.com;camilio.azzouz@ambercapital.com;giorgio.martorelli@ambercapital.com;cameron.brown@ambercapital.com?subject=URGENT%3A%20Millonarios%20FC%20in%20crisis%20—%20Amber%20Capital%20must%20act%20now">📩 Enviar correo ahora</a>
 
   <div class="container">
-    <h2>📜 Texto en inglés (copia y pega en tu correo):</h2>
-    <pre id="english-text">Dear Amber Capital team,
+    <h2>📜 Este es el mensaje que estamos enviando:</h2>
+    <pre id="emailText">Dear Amber Capital team,
 
 I write to you as a devoted supporter of Millonarios Fútbol Club — the most historic and beloved football team in Colombia — to express my deep concern and outright rejection of the current leadership of the club under Gustavo Serpa and Enrique Camacho, and to demand that Amber Capital, as majority stakeholder, take immediate responsibility and action.
 
@@ -98,53 +109,32 @@ Sincerely,
 [TU NOMBRE]
 Millonarios Fútbol Club Supporter
 </pre>
+    <button class="copy-btn" onclick="copyEmail()">📋 Copiar texto</button>
 
-    <button class="copy-btn" onclick="copyText()">📋 Copiar texto</button>
-
-    <h2>🗣️ Instrucciones en español:</h2>
-    <p>1. Haz clic en «Enviar correo ahora». Se abrirá tu app de correo con los destinatarios y asunto ya puestos.<br>
-       2. Copia el texto en inglés desde arriba, pégalo, añade tu nombre y ¡envíalo!<br>
-       3. Comparte esta campaña con otros hinchas. ¡Cada mensaje cuenta!</p>
+    <h2>🗣️ Instrucciones:</h2>
+    <p>1. Haz clic en “Enviar correo ahora” para abrir tu app de correo con los destinatarios y asunto listos.<br>
+       2. Copia el mensaje en inglés de arriba, pégalo en el cuerpo del correo, añade tu nombre y envíalo.<br>
+       3. Comparte este enlace con más hinchas.</p>
   </div>
 
-  <div class="share">
-    <h2>📣 Comparte esta campaña:</h2>
-    <p>¡Usa los botones o comparte este enlace!</p>
-
-    <div style="margin-top: 10px;">
-      <a href="https://wa.me/?text=¡Actúa%20por%20Millonarios!%20Entra%20a%20https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F%20y%20suma%20tu%20voz%20para%20exigir%20cambios%20reales%20en%20el%20club." target="_blank">
-        <button class="copy-btn">📲 WhatsApp</button>
-      </a>
-
-      <a href="https://twitter.com/intent/tweet?text=Los%20hinchas%20de%20Millonarios%20exigimos%20cambios%20reales.%20Actúa%20ya%20➡️%20https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">
-        <button class="copy-btn">🐦 Twitter</button>
-      </a>
-
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">
-        <button class="copy-btn">📘 Facebook</button>
-      </a>
-
-      <button class="copy-btn" onclick="copyLink()">🔗 Copiar enlace</button>
+  <div class="share-section">
+    <h2>🔗 Comparte esta campaña</h2>
+    <p>https://millosdespierta.github.io/MillosDespierta/</p>
+    <div class="share-buttons">
+      <a href="https://wa.me/?text=https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🟢 WhatsApp</a>
+      <a href="https://twitter.com/intent/tweet?text=Millonarios%20está%20en%20crisis.%20La%20hinchada%20exige%20cambios.%20Envia%20tu%20mensaje%20a%20Amber%20Capital%20aquí%20👉%20https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🔵 Twitter/X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🔵 Facebook</a>
     </div>
   </div>
 
   <script>
-    function copyText() {
-      const text = document.getElementById("english-text").innerText;
+    function copyEmail() {
+      const text = document.getElementById('emailText').innerText;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Texto copiado al portapapeles.");
-      }, () => {
-        alert("Error al copiar el texto. Intenta manualmente.");
-      });
-    }
-
-    function copyLink() {
-      navigator.clipboard.writeText("https://millosdespierta.github.io/MillosDespierta/").then(() => {
-        alert("Enlace copiado al portapapeles.");
-      }, () => {
-        alert("No se pudo copiar el enlace.");
+        alert("Texto copiado al portapapeles. ¡Pega en tu correo!");
       });
     }
   </script>
+
 </body>
 </html>
