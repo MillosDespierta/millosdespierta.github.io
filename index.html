@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Hinchada Exige Cambios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS3MFFSJ7H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XS3MFFSJ7H');
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'DM Sans', sans-serif;
       background: #0033A0;
       color: #fff;
       padding: 20px;
+      margin: 0;
       text-align: center;
+    }
+    h1, h2 {
+      color: #fff;
     }
     .btn {
       display: inline-block;
@@ -31,16 +28,27 @@
       text-decoration: none;
       border-radius: 6px;
     }
+    .explicacion {
+      margin-top: 30px;
+      padding: 20px;
+      background: #0045c7;
+      border-radius: 8px;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul {
+      margin-left: 20px;
+    }
     .container {
       background: #fff;
-      color: #333;
+      color: #000;
       padding: 20px;
       border-radius: 8px;
-      margin-top: 20px;
+      margin: 20px auto;
       text-align: left;
-    }
-    h1, h2 {
-      color: #fff;
+      max-width: 900px;
     }
     pre {
       white-space: pre-wrap;
@@ -50,41 +58,65 @@
       color: #000;
     }
     .copy-btn {
-      margin-top: 10px;
-      padding: 8px 20px;
-      font-weight: bold;
-      font-size: 1em;
-      background: #0033A0;
-      color: #fff;
+      background-color: #0033A0;
+      color: white;
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .share-section {
-      margin-top: 40px;
-      background: #ffffff22;
-      padding: 15px;
+      padding: 0.6rem 1.2rem;
       border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
     }
-    .share-buttons a {
-      margin: 0 10px;
-      text-decoration: none;
+    .share {
+      background-color: #1746A2;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .share a {
+      margin: 0 1rem;
       color: #fff;
-      font-size: 1.4em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .share-icon {
+      display: inline-block;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
   <h1>¡Acción inmediata por Millonarios FC!</h1>
-  <p>La hinchada exige cambios reales. Vamos a la raíz del problema: <strong>la sede de Amber Capital en Londres</strong>. Por eso este mensaje debe enviarse en inglés.</p>
-  <p>Haz clic abajo para abrir tu app de correo con los destinatarios y asunto ya listos. Solo copia el mensaje y envíalo.</p>
+  <p>La hinchada exige cambios reales. Vamos a la raíz del problema: <strong>la sede de Amber Capital en Londres</strong>, el verdadero dueño mayoritario del club.</p>
+
+  <div class="explicacion">
+    <h2>📌 ¿Qué estamos enviando y por qué?</h2>
+    <p>Este es el mensaje que queremos hacer llegar directamente a Amber Capital en Londres, la sede del grupo que controla Millonarios FC. Por eso el texto está en <strong>inglés</strong>, para que no haya barreras en la comunicación ni excusas para ignorarlo.</p>
+    <p>En este mensaje, como hinchas organizados, manifestamos con claridad que:</p>
+    <ul>
+      <li>Rechazamos la gestión actual de Gustavo Serpa y Enrique Camacho.</li>
+      <li>Exigimos su salida inmediata y el inicio de un proyecto serio, ambicioso y profesional.</li>
+      <li>Pedimos inversión real, coherente con la historia del club.</li>
+      <li>Y si no hay voluntad de cambio, que vendan sus acciones a quienes sí estén comprometidos con el futuro de Millonarios.</li>
+    </ul>
+    <p>Este no es un mensaje de odio. Es una exigencia firme, legítima y organizada de miles de hinchas que aman al club y no tolerarán más mediocridad.</p>
+
+    <h2>📩 ¿Qué debes hacer?</h2>
+    <p>
+      1. Haz clic en el botón de abajo para abrir tu correo con los destinatarios y asunto ya listos.<br>
+      2. Copia el mensaje en inglés que aparece más abajo, pégalo en el correo, añade tu nombre y envíalo.<br>
+      3. Comparte esta página con más hinchas. Cada mensaje cuenta. Cada voz suma.
+    </p>
+  </div>
 
   <a class="btn" href="mailto:ir@ambercapital.com;joseph.oughourlian@ambercapital.com;olivier.fortesa@ambercapital.com;camilio.azzouz@ambercapital.com;giorgio.martorelli@ambercapital.com;cameron.brown@ambercapital.com?subject=URGENT%3A%20Millonarios%20FC%20in%20crisis%20—%20Amber%20Capital%20must%20act%20now">📩 Enviar correo ahora</a>
 
   <div class="container">
-    <h2>📜 Este es el mensaje que estamos enviando:</h2>
-    <pre id="emailText">Dear Amber Capital team,
+    <h2>✉️ Mensaje en inglés para copiar y enviar:</h2>
+    <pre id="emailText">
+Dear Amber Capital team,
 
 I write to you as a devoted supporter of Millonarios Fútbol Club — the most historic and beloved football team in Colombia — to express my deep concern and outright rejection of the current leadership of the club under Gustavo Serpa and Enrique Camacho, and to demand that Amber Capital, as majority stakeholder, take immediate responsibility and action.
 
@@ -108,34 +140,37 @@ We are not asking for favors. We demand respect, accountability, and action.
 Sincerely,
 [TU NOMBRE]
 Millonarios Fútbol Club Supporter
-</pre>
-    <button class="copy-btn" onclick="copyEmail()">📋 Copiar texto</button>
-
-    <h2>🗣️ Instrucciones:</h2>
-    <p>1. Haz clic en “Enviar correo ahora” para abrir tu app de correo con los destinatarios y asunto listos.<br>
-       2. Copia el mensaje en inglés de arriba, pégalo en el cuerpo del correo, añade tu nombre y envíalo.<br>
-       3. Comparte este enlace con más hinchas.</p>
+    </pre>
+    <button class="copy-btn" onclick="copyText()">📋 Copiar texto</button>
   </div>
 
-  <div class="share-section">
+  <div class="share">
     <h2>🔗 Comparte esta campaña</h2>
-    <p>https://millosdespierta.github.io/MillosDespierta/</p>
-    <div class="share-buttons">
-      <a href="https://wa.me/?text=https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🟢 WhatsApp</a>
-      <a href="https://twitter.com/intent/tweet?text=Millonarios%20está%20en%20crisis.%20La%20hinchada%20exige%20cambios.%20Envia%20tu%20mensaje%20a%20Amber%20Capital%20aquí%20👉%20https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🔵 Twitter/X</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmillosdespierta.github.io%2FMillosDespierta%2F" target="_blank">🔵 Facebook</a>
+    <p><a href="https://millosdespierta.github.io/MillosDespierta/">https://millosdespierta.github.io/MillosDespierta/</a></p>
+    <div class="share-icon">
+      <a href="https://api.whatsapp.com/send?text=¡Actuemos por Millonarios! Mira esto: https://millosdespierta.github.io/MillosDespierta/" target="_blank">🟢 WhatsApp</a>
+      <a href="https://twitter.com/intent/tweet?text=¡Actuemos+por+Millonarios!+Mira+esto:+https://millosdespierta.github.io/MillosDespierta/" target="_blank">🔵 Twitter/X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://millosdespierta.github.io/MillosDespierta/" target="_blank">🔵 Facebook</a>
     </div>
   </div>
 
   <script>
-    function copyEmail() {
-      const text = document.getElementById('emailText').innerText;
+    function copyText() {
+      const text = document.getElementById("emailText").innerText;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Texto copiado al portapapeles. ¡Pega en tu correo!");
+        alert("Texto copiado al portapapeles");
       });
     }
   </script>
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS3MFFSJ7H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XS3MFFSJ7H');
+  </script>
+
 </body>
 </html>
-
